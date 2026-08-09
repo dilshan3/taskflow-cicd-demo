@@ -75,7 +75,7 @@ and runs on GitHub's servers every time you push or open a pull request against
 - The `if:` condition means it runs **only for pushes to `main`**, not for pull
   requests. Opening a PR tests your code; merging it ships your code.
 - It publishes a Release build and deploys to the Azure App Service
-  `taskflow-cicd-demo` using `azure/webapps-deploy`.
+  `cicddemo` using `azure/webapps-deploy`.
 
 ### The one thing you have to set up
 
