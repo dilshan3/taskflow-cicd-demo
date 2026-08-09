@@ -1,6 +1,6 @@
 # TaskFlow
 
-[![CI](https://github.com/ddevcode/taskflow-cicd-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/ddevcode/taskflow-cicd-demo/actions/workflows/ci.yml)
+[![CI](https://github.com/dilshan3/taskflow-cicd-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/dilshan3/taskflow-cicd-demo/actions/workflows/ci.yml)
 
 A small **Task Management API** built with ASP.NET Core (.NET 8). It exists to teach
 **CI/CD**: every push is automatically built, tested, and deployed to Azure by a
@@ -91,4 +91,4 @@ in the code.
 push / PR  ->  build  ->  test  ->  (only on main, only if tests pass)  ->  deploy to Azure
 ```
 
-Watch it happen on the [Actions tab](https://github.com/ddevcode/taskflow-cicd-demo/actions).
+Watch it happen on the [Actions tab](https://github.com/dilshan3/taskflow-cicd-demo/actions).
