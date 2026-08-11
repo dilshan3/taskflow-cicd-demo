@@ -30,8 +30,8 @@ jobs:
   deploy:
     needs: build-and-test
     runs-on: ubuntu-latest
-    # Only deploy for commits landing on main, never for pull requests.
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Only deploy for commits landing on main or develop, never for pull requests.
+    if: github.event_name == 'push' && contains(fromJSON('["refs/heads/main", "refs/heads/develop"]'), github.ref)
     steps:
       - name: Check out the code
         uses: actions/checkout@v7
