@@ -43,10 +43,10 @@ public class TaskService : ITaskService
     {
         var title = request.Title?.Trim() ?? string.Empty;
 
-        if (string.IsNullOrWhiteSpace(title))
-        {
-            throw new TaskValidationException("Title is required.");
-        }
+        //if (string.IsNullOrWhiteSpace(title))
+        //{
+        //    throw new TaskValidationException("Title is required.");
+        //}
 
         if (title.Length > 100)
         {
